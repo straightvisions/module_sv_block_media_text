@@ -13,7 +13,7 @@
 
 	class sv_block_media_text extends init {
 		public function init() {
-			$this->set_module_title( __( 'Block: Image', 'sv100' ) )
+			$this->set_module_title( __( 'Block: Media & Text', 'sv100' ) )
 				->set_module_desc( __( 'Settings for Gutenberg Block', 'sv100' ) )
 				->load_settings()
 				->register_scripts()
@@ -27,6 +27,12 @@
 		}
 
 		protected function load_settings(): sv_block_media_text {
+			$this->get_setting( 'stack_active' )
+				->set_title( __( 'Stack Media & Text', 'sv100' ) )
+				->set_description( __( 'You may want to stack Media & Text on narrow viewports.', 'sv100' ) )
+				->set_is_responsive(true)
+				->load_type( 'checkbox' );
+
 			$this->get_setting( 'margin' )
 				->set_title( __( 'Margin', 'sv100' ) )
 				->set_is_responsive(true)
