@@ -9,3 +9,8 @@
 .wp-block-media-text.has-media-on-the-left .wp-block-media-text__content{
 	padding-right:0;
 }
+.wp-block-media-text.is-image-fill figure.wp-block-media-text__media>img{
+	width:auto !important;
+	height:auto !important;
+	max-width: 100% !important;
+}
