@@ -14,3 +14,10 @@
 	position:static !important;
 	margin:0 !important;
 }
+
+/* Remove Padding on Mobile when stacked */
+@media (max-width: 600px){
+	.wp-block-media-text.is-stacked-on-mobile .wp-block-media-text__content {
+		padding: 20px 0 0 0;
+	}
+}
