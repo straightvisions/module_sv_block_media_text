@@ -5,11 +5,11 @@
 	padding-right:0;
 }
 .wp-block-media-text.is-image-fill figure.wp-block-media-text__media img{
-	min-width:100%;
+	/*min-width:100%;
 	min-height:100%;
-	object-fit:cover;
 	width:auto !important;
-	height:auto !important;
+	height:auto !important;*/
+	object-fit:cover;
 	max-width: 100% !important;
 	position:static !important;
 	margin:0 !important;
